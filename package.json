@@ -6,7 +6,7 @@
   },
   "scripts": {
     "start": "node --env-file=.env server.js",
-    "dev": "node --watch --env-file=.env server.js",
+    "dev": "nodemon --env-file=.env server.js",
     "test": "vitest",
     "test:database": "vitest database",
     "test:server": "vitest server",
@@ -16,7 +16,9 @@
   },
   "dependencies": {
     "express": "^5.1.0",
-    "pg": "^8.14.1"
+    "nodemon": "^3.1.10",
+    "pg": "^8.16.3",
+    "vite": "^7.0.4"
   },
   "devDependencies": {
     "supertest": "^7.1.0",
